@@ -1,0 +1,85 @@
+<!-- Detta är en base-template som innehåller
+* bootstrap (+extra som bstrap behöver)
+* jQuery
+* Javascript
+* Och lite extra som bootstrap
+ -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>azmi | pick up lines</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/a6f42a4fdb.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+<style>
+/*h5{color: #FF3333}*/
+
+html{
+  height:100%;width:100%
+}
+  body{
+      color:white; /* Text*/
+      font-family: "Audiowide", sans-serif;
+      background: linear-gradient(45deg, #eb4034, #dd4d4d,#df2929);
+      /*1)html måste vara 100% och "background" gradient på body 2) scalea färgen, the more color, the more scale 3)*/
+      background-size:400% 100%;
+      animation: gradient 3s linear infinite;
+      animation-direction: alternate;
+    }
+    @keyframes gradient{
+      0%   {background-position:0%}
+      100% {background-position:100%}
+    }
+
+
+  h1{ font-size: 40px; text-align:center;}
+  .big-text{ font-size: 3rem;}
+
+  button:focus  { outline: none; box-shadow:none;} /*Ingen focus ram (markören om nav med pialr)*/
+  button:active { background-color:#d4d4d4; }
+  button:hover  { background-color:#d4d4d4; }
+  button {width:;height:;font-size:24px; border: 2px solid white; background-color: white;/*knappens surface frg*/}
+  button {color:#FF3333;}
+
+
+
+</style>
+</head>
+
+
+  <body>
+    <div class="container"></br></br></br>
+    <div id="main-container" style="text-align:center;margin-top:1%; style=">
+      <img src="pickup2.png" style="width:25%;">
+    </div>
+    <div id="main-container" style="text-align:center;margin-top:5%; style=">
+
+      <!-- <i class="fas fa-heart"></i> -->
+
+
+
+      <h1 class='big-text' id='opening'> </h1>
+      <h1 class='big-text' id='punchline'> </h1>
+      <button type="button" name="button" id='pickup_button' onclick='pickup_function()' style="margin-top:10%;"><b>PICK ME UP</b></button></br></br></br>
+
+
+      <a style="color:#ff8a8a; font-size:0.9rem;" href="https://forms.gle/M7NYWEaqhppFtY5J6">Add your pick-up lines!</a>
+    </div>
+
+</div>
+  </body>
+
+
+
+
+  <script> //Javascript, scripts
+    //document.getElementById("headline").innerHTML = "Detta är h1 och Javascript är aktivt!"; //utan # . #id eller .class
+  </script>
+
+</html>
